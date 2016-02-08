@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
-class HelloWorld extends Component {
-  render() {
-    return (
-        <h1>Hello World !</h1>
-    )
-  }
-}
+import routes from './routes';
+import configureStore from './store';
 
-render(<HelloWorld/>, document.getElementById('root'));
+const store = configureStore();
+
+const element = (
+    <Provider store={store}>
+      {routes}
+    </Provider>
+);
+
+ReactDOM.render(element, document.getElementById('root'));
