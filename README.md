@@ -1,2 +1,10 @@
 # redux-tutoriel
-Blog article project management built throughout my blog tutorial. 
+
+Blog project management built throughout my blog tutorial.
+ 
+ 
+## Branches
+
+You can follow the article with the branches. 
+
+
